@@ -1,0 +1,14 @@
+[0m18:19:39.577889 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204B4334650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204B434BE10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204B434B050>]}
+
+
+============================== 18:19:39.587503 | 819f1035-bda9-4b7f-823e-2c0d5a2021bd ==============================
+[0m18:19:39.587503 [info ] [MainThread]: Running with dbt=1.8.1
+[0m18:19:39.590900 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'D:\\Data-Engineer-Skola\\catatan\\dbt2\\learn_dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run --models raw_customer2', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:19:39.593785 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path D:\Data-Engineer-Skola\catatan\dbt2\learn_dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:19:39.599173 [debug] [MainThread]: Command `dbt run` failed at 18:19:39.598527 after 0.21 seconds
+[0m18:19:39.600438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204B4351E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204B4301310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000204B434B510>]}
+[0m18:19:39.601649 [debug] [MainThread]: Flushing usage events
