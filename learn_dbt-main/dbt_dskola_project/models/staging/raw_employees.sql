@@ -1,0 +1,20 @@
+select
+    employeeID,
+    lastName,
+    firstName,
+    title,
+    titleOfCourtesy,
+	birthDate,
+    hireDate,
+    city,
+    region,
+    postalCode,
+	country,
+	homePhone,
+    extension,
+    photo,
+    notes,
+    reportsTo,
+	photoPath
+from
+    {{ source('raw','employees') }}
